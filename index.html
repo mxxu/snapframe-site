@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snapframe — screenshots that look like you meant it</title>
+<meta name="description" content="Chrome extension: capture full pages, blur secrets, add frames and social presets. Free capture and annotation; Pro is $29 once.">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./">
+    <svg width="22" height="22" viewBox="0 0 128 128" aria-hidden="true">
+      <rect x="2" y="2" width="124" height="124" rx="26" fill="#1a1a1a"/>
+      <g stroke="#0090ff" stroke-width="10" fill="none">
+        <path d="M30 56 V38 a8 8 0 0 1 8-8 H56"/>
+        <path d="M72 30 h18 a8 8 0 0 1 8 8 v18"/>
+        <path d="M98 72 v18 a8 8 0 0 1-8 8 H72"/>
+        <path d="M56 98 H38 a8 8 0 0 1-8-8 V72"/>
+      </g>
+      <circle cx="64" cy="64" r="15" fill="#0090ff"/>
+    </svg>
+    <span>Snapframe</span>
+  </a>
+  <!-- TODO: replace # with the Chrome Web Store listing URL after publish -->
+  <a class="store-link" href="#">Add to Chrome</a>
+</header>
+
+<main>
+
+<section class="hero">
+  <h1>Screenshots that look<br>like you meant it.</h1>
+  <p class="lede">
+    For people whose screenshots ship — into docs, pull requests, changelogs,
+    and launch pages. Capture is free forever; the polish is&nbsp;$29, once.
+  </p>
+  <p class="actions">
+    <!-- TODO: replace # with the Chrome Web Store listing URL after publish -->
+    <a class="btn primary" href="#">Add to Chrome</a>
+    <!-- TODO: replace # with the Creem checkout URL after deployment -->
+    <a class="btn" href="#">Get Pro — $29 once</a>
+  </p>
+
+  <figure class="demo" aria-label="A raw capture, framed and redacted by Snapframe">
+    <div class="demo-shot" role="img">
+      <div class="shot-chrome" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <span class="shot-url">app.example.com/settings</span>
+      </div>
+      <div class="shot-body">
+        <div class="fake-sidebar">
+          <b class="w40"></b><b class="w70"></b><b class="w55"></b><b class="w65"></b><b class="w45"></b>
+        </div>
+        <div class="fake-main">
+          <b class="w60 big"></b>
+          <div class="fake-row"><b class="w90"></b><b class="w30"></b></div>
+          <div class="fake-row"><b class="w75"></b>
+            <span class="fake-toggle" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="fake-secret" aria-hidden="true">
+            <span class="callout">redacted</span>
+          </div>
+          <div class="fake-row"><b class="w50"></b><b class="w35"></b></div>
+          <div class="fake-row"><b class="w80"></b></div>
+          <svg class="anno-arrow" viewBox="0 0 120 90" aria-hidden="true">
+            <path d="M96 8 L28 66" />
+            <path d="M28 66 l4-16 m-4 16 l16-4" />
+          </svg>
+          <span class="step-badge" aria-hidden="true">1</span>
+          <span class="anno-label" aria-hidden="true">enable sync</span>
+        </div>
+      </div>
+    </div>
+    <figcaption class="demo-cap">
+      <span>1600 × 900</span><span>ocean backdrop</span><span>blurred secret</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="split" id="free">
+  <h2>Free, and genuinely useful</h2>
+  <div class="split-grid">
+    <div>
+      <h3>Capture anything</h3>
+      <p>Visible area, full page, a dragged region, or a single element.
+         Full-page capture stitches long pages, including lazy-loaded content,
+         and always returns one complete image.</p>
+    </div>
+    <div>
+      <h3>Annotate without paying</h3>
+      <p>Pen, arrow, rectangle, and text are free — not crippled. Keyboard
+         shortcuts for everything. Copy or save straight from a quick toolbar;
+         most screenshots never need an editor.</p>
+    </div>
+    <div>
+      <h3>Fast path by default</h3>
+      <p>Hit the shortcut, get a small toolbar: Copy, Save, or Open studio.
+         The editor is one click away when you want it, never in the way.</p>
+    </div>
+    <div>
+      <h3>Stays on your machine</h3>
+      <p>Screenshots are stored locally in your browser. Nothing is uploaded,
+         there is no analytics, and no account is required.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pro" id="pro">
+  <h2>Pro — $29, once</h2>
+  <p class="pro-lede">The part that comes after capture: making the image
+     carry your name in public.</p>
+  <ul class="pro-list">
+    <li><strong>Backdrops and frames</strong> — gradients, padding, rounded
+        corners, shadows, browser window chrome.</li>
+    <li><strong>Social presets</strong> — exact sizes for X, Open Graph,
+        Product Hunt, LinkedIn, and 16:9 slides.</li>
+    <li><strong>Blur and redact</strong> — hide tokens, emails, and customer
+        data before you share.</li>
+    <li><strong>Step badges and highlighter</strong> — for tutorials and
+        walkthroughs.</li>
+    <li><strong>Searchable history</strong> — every capture kept locally and
+        findable later.</li>
+    <li><strong>WebP export</strong> — and transparent backgrounds.</li>
+  </ul>
+  <!-- TODO: replace # with the Creem checkout URL after deployment -->
+  <p class="actions"><a class="btn primary" href="#">Get Pro — $29 once</a></p>
+  <p class="fineprint">One-time payment, no subscription. Up to 3 devices.
+     If your screenshots end up in public with your name on them, this pays
+     for itself the first time someone doesn't ask "what tool did you use?"
+     — they just notice it looks right.</p>
+</section>
+
+<section class="privacy" id="privacy">
+  <h2>Privacy in one paragraph</h2>
+  <p>Snapframe stores every screenshot locally and never uploads your images.
+     It contains no analytics and no advertising. The only network request it
+     ever makes is validating your license key when you buy Pro.
+     <a href="privacy.html">Read the full policy</a>.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>Snapframe — an independent Chrome extension. Not affiliated with Google.</span>
+  <span><a href="privacy.html">Privacy policy</a></span>
+</footer>
+
+</body>
+</html>
